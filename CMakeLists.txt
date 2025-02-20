@@ -5,7 +5,7 @@ find_package(Boost REQUIRED COMPONENTS system)
 find_package(Threads REQUIRED)
 
 add_executable(termse)
-target_sources(termse PRIVATE termse.cpp)
+target_sources(termse PRIVATE src/server.cpp)
 target_compile_features(termse PRIVATE cxx_std_17)
 
 target_link_libraries(termse
